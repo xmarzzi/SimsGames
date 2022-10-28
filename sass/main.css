@@ -1,0 +1,482 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* FONTS */
+/* VARIABLES */
+/* EXTEND */
+.text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+
+.carta {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 23px;
+}
+
+.title {
+  font-family: "Kanit", sans-serif;
+  font-size: 38px;
+}
+
+.dark-bg {
+  background-color: #000000;
+}
+
+.titlebig {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 45px;
+}
+
+.carritoItems {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2f3640;
+  font-size: 20px;
+}
+
+.carritoSub {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #4cd137;
+  font-size: 24px;
+}
+
+/* APLICA A TODAS LAS PÁGINAS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bar-btn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15%;
+  /*  & nav ul li:hover{
+       background: #e1b12c;
+
+   } */
+}
+header .logo {
+  margin-left: 8%;
+}
+header .logo img {
+  margin: 20px auto;
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  z-index: 1000;
+  margin: auto 0;
+  font-size: medium;
+}
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header a:hover {
+  color: rgb(85, 30, 212);
+}
+header nav ul li a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #EDEDED;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  margin: 0 25px;
+  font-size: x-large;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+nav ul li .submenu {
+  display: none;
+  background: #3f9c02;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+nav ul li .submenu li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  header {
+    display: block;
+  }
+  header .logo img {
+    display: flex;
+    width: 25vw;
+    margin: auto;
+    justify-content: center;
+  }
+  header .bar-btn {
+    display: flex;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    padding-bottom: 8px;
+  }
+  header .nav-menu {
+    height: 0vh;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 3% 3% 0;
+  }
+  header .nav-menu .submenu {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+  }
+  header nav ul li:hover .submenu {
+    display: inline-block;
+  }
+  header .nav-menu li {
+    display: none;
+  }
+  header #check {
+    display: none;
+  }
+  header #check:checked ~ .nav-menu {
+    height: 50vh;
+    display: flex;
+    margin: auto;
+  }
+  header #check:checked ~ .nav-menu li {
+    display: block;
+  }
+  nav ul li:hover .submenu {
+    display: inline-block;
+  }
+  .menu {
+    text-transform: uppercase;
+    font-size: small;
+  }
+}
+footer {
+  background-color: #EDEDED;
+}
+footer .logo {
+  border-radius: 55px 25px 85px 5px;
+}
+footer h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000;
+  margin-bottom: 5px;
+}
+footer .footerRedes h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+  footer div a .logo {
+    border-radius: 55px 25px 85px 5px;
+  }
+  footer .navbar-brand {
+    margin: auto;
+  }
+  footer .newsletter {
+    margin: 15px auto;
+    padding: 20px 15px;
+  }
+  footer .footerRedes {
+    margin: auto;
+    justify-content: space-around;
+  }
+}
+/* INDEX */
+.portada {
+  width: 100%;
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2022/09/ts4-play-sims-for-free-new-plumbob.png.adapt.crop16x9.431p.png);
+  gap: 0;
+  background-size: cover;
+}
+.portada .texto {
+  display: flex;
+  justify-content: center;
+  padding: 15%;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 90px;
+}
+
+.carrousel-items {
+  display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: none;
+      scroll-snap-type: none;
+  background-color: #000;
+}
+.carrousel-items h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  font-size: 35px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel-item {
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.inicio {
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/220923-franchise-page-rebrand/common/the-sims-section-bg-trailer-section-xl.jpg.adapt.1920w.jpg);
+  background-size: cover;
+}
+.inicio .juegos h5 {
+  font-size: 48px;
+}
+.inicio .juegos p {
+  font-size: 30px;
+}
+.inicio .juegos .btn {
+  display: flex;
+  font-size: x-large;
+  border-color: #fff;
+  border-width: 10px;
+  border-style: dotted;
+  color: #4cd137;
+  text-decoration: none;
+  margin: auto;
+  padding: 15px;
+}
+.inicio .juegos .btn :hover {
+  box-shadow: inset 0 0 20px rgb(7, 223, 100), 0 0 20px rgb(0, 172, 57);
+  outline-color: rgb(255, 255, 255);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+.inicio .juegos .btn a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.inicio .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.inicio .embed-container iframe {
+  position: absolute;
+  margin: 10% 15%;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+}
+
+.anuncio {
+  background-color: #000;
+}
+.anuncio h2 {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 6vw;
+  padding: 0 15%;
+}
+.anuncio h2 .uno {
+  font-family: "Kanit", sans-serif;
+  color: #4cd137;
+}
+.anuncio h2 .dos {
+  font-family: "Kanit", sans-serif;
+  color: #9c88ff;
+}
+.anuncio h2 .tres {
+  font-family: "Kanit", sans-serif;
+  color: #fbc531;
+}
+.anuncio img {
+  width: 45%;
+  margin: 2%;
+}
+
+@media (max-width: 768px) {
+  main .logo {
+    width: 2vw;
+  }
+  main .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  main .embed-container iframe {
+    position: absolute;
+    margin: 5% 6%;
+    top: 0;
+    left: 0;
+    width: 88%;
+    height: 85%;
+  }
+  .carrousel-items h4 {
+    font-size: 28px;
+  }
+  .portada .texto {
+    font-size: 60px;
+  }
+}
+/* JUEGOS */
+.principal {
+  background-image: url(https://th.moyens.net/wp-content/uploads/2022/06/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%99.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+.principal .card {
+  padding: 3% 0;
+  justify-content: flex-start;
+  margin: 8%;
+  border-radius: 25px;
+  width: 30rem;
+}
+.principal .card h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 45px;
+}
+.principal .card p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .principal .card {
+    width: 18rem;
+    display: flex;
+  }
+  .principal .card h5 {
+    font-size: x-large;
+  }
+  .principal .card p {
+    font-size: medium;
+  }
+}
+/* DESCUBRE */
+.descubre {
+  background-size: cover;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/009/206/939/non_2x/a-set-of-geometric-colorful-shapes-isolated-on-white-background-vector.jpg);
+}
+.descubre .card {
+  padding: 3% 0;
+  justify-content: flex-start;
+  margin: 8%;
+  border-radius: 25px;
+  width: 50rem;
+}
+.descubre .card h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 45px;
+}
+.descubre .card p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .descubre .card {
+    width: 18rem;
+    display: flex;
+  }
+  .descubre .card h5 {
+    font-size: x-large;
+  }
+  .descubre .card p {
+    font-size: medium;
+  }
+  .descubre .card img {
+    display: flex;
+    margin: 15%;
+  }
+}
+/* TRUCOS Y CONSEJOS */
+.introducción h5 {
+  font-size: 50px;
+}
+
+.encabezado h2 .uno {
+  font-family: "Kanit", sans-serif;
+  color: #4cd137;
+}
+.encabezado h2 .dos {
+  font-family: "Kanit", sans-serif;
+  color: #9c88ff;
+}
+.encabezado h2 .tres {
+  font-family: "Kanit", sans-serif;
+  color: #fbc531;
+}
+
+.info h2 {
+  margin: 3% 25%;
+  font-size: 4rem;
+}
+.info p {
+  margin: 0 25%;
+  font-size: 24px;
+}
+.info h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 5% 15% 0 15%;
+  font-size: 3rem;
+}
+.info table td {
+  font-size: 2rem;
+  padding: 25px 150px;
+}
+
+.portadaTrucos {
+  background-image: url(https://www.ea.com/_next/image?url=https%3A%2F%2Fdrop-assets.ea.com%2Fimages%2F7fpusLGdAUo7RQh5ZlGs9t%2F855c146f079d090ded8f6496e655cfac%2FTS4_Homepage-Hero_16x9.jpg&w=1920&q=75);
+  background-size: cover;
+  height: 100vh;
+}
+.portadaTrucos .encabezado .titulo {
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-size: 6rem;
+  padding: 15% 70% 15% 5%;
+}/*# sourceMappingURL=main.css.map */

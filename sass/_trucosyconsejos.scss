@@ -1,0 +1,62 @@
+.introducción{
+    & h5{
+        font-size: 50px;
+    }
+}
+.encabezado{
+    h2{
+     .uno{
+        font-family: 'Kanit', sans-serif;
+        color: #4cd137;
+     }
+     .dos{
+        font-family: 'Kanit', sans-serif;
+        color: #9c88ff;
+     }
+     .tres{
+        font-family: 'Kanit', sans-serif;
+        color: #fbc531;
+     }
+    }}
+
+.info{
+    
+    h2{
+        
+        margin: 3% 25%;
+        font-size: 4rem;
+    }
+    p{
+        margin: 0 25%;
+        font-size: 24px;
+    }
+    h4{
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 5% 15% 0 15%;
+        font-size: 3rem;
+    }
+    table{
+        
+        td{
+            
+            font-size: 2rem;
+            padding: 25px 150px;
+        }
+        
+    }
+}
+
+.portadaTrucos{
+    background-image: url(https://www.ea.com/_next/image?url=https%3A%2F%2Fdrop-assets.ea.com%2Fimages%2F7fpusLGdAUo7RQh5ZlGs9t%2F855c146f079d090ded8f6496e655cfac%2FTS4_Homepage-Hero_16x9.jpg&w=1920&q=75);
+    background-size: cover;
+    height: 100vh;
+    .encabezado{
+        .titulo{
+            color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 6rem;
+    padding: 15% 70% 15% 5%  ;
+ 
+        }
+    }
+}

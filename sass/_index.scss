@@ -1,0 +1,142 @@
+.portada{
+    width: 100%;
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2022/09/ts4-play-sims-for-free-new-plumbob.png.adapt.crop16x9.431p.png);
+    gap: 0;
+    background-size: cover;
+    .texto{
+        display: flex;
+        justify-content: center;
+        padding: 15% ;
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+        font-size: 90px;
+        
+    }
+}
+
+.carrousel-items{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: none;
+    background-color: #000;
+    h4{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #fff;
+        font-size: 35px;
+    }}
+    ::-webkit-scrollbar {
+        display: none;
+    }
+  .carrousel-item{
+    min-width: 250px;
+    max-width: 300px;
+    }
+ .inicio{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/220923-franchise-page-rebrand/common/the-sims-section-bg-trailer-section-xl.jpg.adapt.1920w.jpg);
+    background-size: cover;
+    .juegos{
+        h5{
+            font-size: 48px;
+        }
+        p{
+            font-size: 30px;
+        }
+    .btn{
+        display: flex;
+        font-size: x-large;
+        border-color: #fff;
+        border-width: 10px;
+        border-style:dotted;
+        color:#4cd137;
+        text-decoration: none;
+        margin: auto;
+        padding: 15px;
+        :hover{
+            box-shadow: inset 0 0 20px rgb(7, 223, 100), 0 0 20px rgb(0, 172, 57);
+            outline-color: rgb(255, 255, 255);
+            outline-offset: 80px;
+            text-shadow: 1px 1px 6px #fff;
+           
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }   
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+        position: absolute;
+        margin:10% 15%;
+        top:0;
+        left: 0;
+        width: 70%;
+        height: 70%;
+    }
+    
+    }
+
+.anuncio{
+    background-color: #000;
+    h2{
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+        font-size: 6vw;
+        padding: 0 15% ;
+     .uno{
+        font-family: 'Kanit', sans-serif;
+        color: #4cd137;
+     }
+     .dos{
+        font-family: 'Kanit', sans-serif;
+        color: #9c88ff;
+     }
+     .tres{
+        font-family: 'Kanit', sans-serif;
+        color: #fbc531;
+     }
+    }
+    img{
+        width: 45%;   
+        margin: 2%;    
+}}
+
+@media (max-width:$tablet){
+    main{
+        .logo{
+            width: 2vw;
+        }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .embed-container iframe {
+            position: absolute;
+            margin:5% 6%;
+            top:0;
+            left: 0;
+            width: 88%;
+            height: 85%;
+        }
+    }
+    .carrousel-items{
+        h4{
+            font-size: 28px;
+        }
+    }
+    .portada{
+    .texto{
+        font-size: 60px;
+    }
+    }
+}
+

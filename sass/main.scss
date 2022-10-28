@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+// font-family: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+// font-family: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+// font-family: 'Kanit', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+// font-family: 'Source Sans Pro', sans-serif;
+/* VARIABLES */
+@import 'vars';
+
+/* EXTEND */
+
+.text{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff
+}
+
+.carta{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 38px;
+}
+
+.dark-bg{
+    background-color: #000000;
+}
+.titlebig{
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+}
+.carritoItems{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2f3640;
+    font-size: 20px;
+}
+
+.carritoSub{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#4cd137;
+    font-size: 24px;
+}
+
+/* APLICA A TODAS LAS PÁGINAS */
+@import 'menu';
+
+/* INDEX */
+@import 'index';
+
+/* JUEGOS */
+@import 'juegos';
+
+/* DESCUBRE */
+@import 'descubre';
+
+/* TRUCOS Y CONSEJOS */
+@import 'trucosyconsejos';
+
+

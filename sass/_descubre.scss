@@ -1,0 +1,42 @@
+.descubre{
+    background-size: cover;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/009/206/939/non_2x/a-set-of-geometric-colorful-shapes-isolated-on-white-background-vector.jpg);
+.sims{
+
+}
+.card{
+    padding: 3% 0;
+    justify-content: flex-start;
+    margin: 8% ;
+    border-radius: 25px;
+    width: 50rem;
+        h5{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 45px;
+        }
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+        }
+}
+}
+@media (max-width:$tablet){
+   .descubre{
+    
+    .card{
+        width: 18rem;
+        display: flex;
+        h5{
+            font-size: x-large;
+        }
+        p{
+            font-size: medium;
+        }
+        img{
+            display: flex;
+            margin: 15%;
+        }
+    }
+   }
+    
+}
