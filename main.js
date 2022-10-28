@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const fetchData = async () => {
   try{
-      const res = await fetch('/packexpansion.json')
+      const res = await fetch('/api.json')
       const data = await res.json()
       pintarProductos(data)
       detectarBotones(data)
@@ -17,12 +17,11 @@ const fetchData = async () => {
 }
 
 const contenedorProductos = document.querySelector('#contenedorProductos')
-const contenedor = document.querySelector('#contenedor')
 const pintarProductos = (data) => {
   const template = document.querySelector('#templateProductos').content
   const fragment = document.createDocumentFragment()
   data.forEach(producto => {
-      template.querySelector('img').setAttribute('src', producto.img)
+      template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
       template.querySelector('h5').textContent = producto.title
       template.querySelector('p').textContent = producto.description
       template.querySelector('p span').textContent = producto.price
