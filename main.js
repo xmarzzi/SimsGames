@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const fetchData = async () => {
   try{
-      const res = await fetch('api.json')
+      const res = await fetch('/api.json')
       const data = await res.json()
       pintarProductos(data)
       detectarBotones(data)
@@ -16,7 +16,7 @@ const fetchData = async () => {
   }
 }
 
-const contenedorProductos = document.querySelector('#contenedorProductos')
+const contenedorProductos = document.querySelector('#contenedor-productos')
 const pintarProductos = (data) => {
   const template = document.querySelector('#templateProductos').content
   const fragment = document.createDocumentFragment()
