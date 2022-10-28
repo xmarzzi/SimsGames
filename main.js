@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const fetchData = async () => {
   try{
-      const res = await fetch('/api.json')
+      const res = await fetch('api.json')
       const data = await res.json()
       pintarProductos(data)
       detectarBotones(data)
